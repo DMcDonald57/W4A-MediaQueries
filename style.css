@@ -27,8 +27,33 @@
     #header > a{
         justify-self: right;
         align-self: center;
-        margin-right: 8px;
+        margin-right: 14px;
         font-size: 14pt;
         
     }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 31fr));
+        row-gap: 30px;
+        margin: 20px;
+    }
+    #santa{
+    height: 25vh;
+    justify-self: center;
     
+    }
+    #elvis{
+    height: 25vh;
+    justify-self: center;
+    }  
+
+    #nyc{
+    height: 25vh;
+    justify-self: center;
+    }
+    footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    font-size: 14pt;
+    }
