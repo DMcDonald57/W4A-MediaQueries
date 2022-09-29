@@ -29,13 +29,27 @@
         align-self: center;
         margin-right: 14px;
         font-size: 14pt;
-        
-    }
+        }
+    nav{
+        display: none;
+        grid-template-columns: 150px;
+        justify-content: end;
+        margin-right: 40px;
+        row-gap: 10px;
+        }
+    nav > a{
+        border: solid blue 2px;
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 5px;
+        margin-left: 20%;
+        }
+
     .main{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
         row-gap: 30px;
-        margin: 20px;
+        margin: 20px;        
     }
     div{
         display: grid;
@@ -121,9 +135,13 @@
         div > h3{
             font-size: 32pt;}
         div > p{
-            font-size: 24pt;
-        }
+            font-size: 24pt;}
         footer{
-            font-size: 20pt;
-            } 
-    }
+            font-size: 20pt;}
+        
+            nav{
+                display: grid
+            }
+        }
+        
+    
