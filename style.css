@@ -19,8 +19,8 @@
     #header > h1{
         font-size: 14pt;
         font-family: cursive;
-        color: coral;
-        justify-self: right;
+        color: blue;
+        justify-self: center;
         align-self: center;
     }
 
@@ -37,26 +37,93 @@
         row-gap: 30px;
         margin: 20px;
     }
+    div{
+        display: grid;
+        row-gap: 20px;
+    }
+    div > img{
+        justify-self: center;
+    }
 
     #santa{
     height: 25vh;
-    margin-left: 30%;
-    
     }
+
     #elvis{
     height: 25vh;
-    margin-left: 30%;
     }  
 
     #nyc{
     height: 25vh;
     width: 50vw;
-    margin-left: 20%;
     }
-    
+
     footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     font-size: 14pt;
+    margin-bottom: 30px;
+    }
+
+    @media only screen and (min-width: 625px){
+        html{
+            background-color: lightgoldenrodyellow;}
+        #header{
+            grid-template-columns: 1fr 2fr 1fr;}
+        #logo{
+            display: initial;
+            height: 100px;} 
+        #header > h1{
+            font-size: 20pt;}
+        #header > a{
+            margin-right: 40px;
+            font-size: 15pt;}
+        #santa{
+            height: 40vh; }
+        #elvis{
+            height: 40vh;} 
+        #nyc{
+            height: 40vh;
+            width: 65vw;} 
+        div > h3{
+            font-size: 24pt;}
+        div > p{
+            font-size: 14pt;
+        }
+        footer{
+            font-size: 15pt;}  
+    }
+
+    @media only screen and (min-width: 1000px){
+        html{
+            background-color: indianred;}
+        #header{
+            grid-template-columns: 1fr 2fr 1fr;}
+        #logo{
+            display: initial;
+            height: 150px;} 
+        #header > h1{
+            font-size: 36pt;}
+        #header > a{
+            margin-right: 40px;
+            font-size: 20pt;
+            border: 2px solid blue;
+            border-radius: 15px;
+            padding: 10px;}
+        #santa{
+            height: 60vh; }
+        #elvis{
+            height: 60vh;} 
+        #nyc{
+            height: 60vh;
+            width: 85vw;} 
+        div > h3{
+            font-size: 32pt;}
+        div > p{
+            font-size: 24pt;
+        }
+        footer{
+            font-size: 20pt;
+            } 
     }
